@@ -1,0 +1,46 @@
+.bg-archive {
+    width: 60px; height: 48px;
+    background: url('css_sprites.png') -104px -10px;
+}
+
+x
+.bg-arrow {
+    width: 32px; height: 30px;
+    background: url('css_sprites.png') -184px -92px;
+}
+
+x
+.bg-circle {
+    width: 74px; height: 74px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-qq {
+    width: 25px; height: 24px;
+    background: url('css_sprites.png') -82px -104px;
+}
+
+x
+.bg-rocket {
+    width: 43px; height: 62px;
+    background: url('css_sprites.png') -184px -10px;
+}
+
+x
+.bg-Shape253 {
+    width: 52px; height: 55px;
+    background: url('css_sprites.png') -10px -104px;
+}
+
+x
+.bg-weibo {
+    width: 25px; height: 24px;
+    background: url('css_sprites.png') -127px -104px;
+}
+
+x
+.bg-weixin {
+    width: 25px; height: 24px;
+    background: url('css_sprites.png') -10px -179px;
+}
