@@ -1,0 +1,298 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-size: 625%;
+	margin: 0;
+	padding: 0;
+	background: #fcfcfc;
+}
+body {
+	font-size: 0.16rem;
+}
+
+
+/*头部*/
+header {
+	padding-right: 0.2rem;
+	padding-left: 0.2rem;
+	width: 100%;
+	height: 0.3rem;
+	overflow: hidden;
+}
+.phone {
+	display: none;
+	color: #29b078;
+	font-size: 0.14rem;
+	line-height: 0.3rem;
+}
+
+.icon-group {
+	display: none;
+	float: right;
+	line-height: 0.3rem;
+	font-size: 0.14rem;
+	padding-top: 0.02rem;
+}
+.icon-group li {
+	margin-right: 0.1rem;
+}
+.bg-qq {
+	display: inline-block;
+    width: 25px; height: 24px;
+    background: url(../image/index-assets/css_sprites.png) -82px -104px;
+}
+.bg-weibo {
+	display: inline-block;
+    width: 25px; height: 24px;
+    background: url(../image/index-assets/css_sprites.png) -127px -104px;
+}
+.bg-weixin {
+	display: inline-block;
+    width: 25px; height: 24px;
+    background: url(../image/index-assets/css_sprites.png) -10px -179px;
+}
+
+.breadcrumb {
+	float: right;
+	line-height: 0.3rem;
+	font-size: 0.15rem;
+	padding: 0;
+	margin-left: 0.15rem;
+	background: transparent;
+	
+}
+.breadcrumb a {
+	color: #000;	
+}
+.breadcrumb a:hover {
+	color: #29b078;	
+	text-decoration: none;
+}
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "| ";
+    padding: 0 7px;  
+}
+
+/*导航栏*/
+.navbar {
+	border: none;
+	border-radius: 0;
+	background: #29b078;
+	font-size: 0.17rem;	
+	color: #fff;	
+	margin: 0;
+}
+.nav a{
+	text-align: center;
+}
+.nav a:hover {
+	border-bottom: 1px solid #fff;
+}
+.brand-img {
+	max-width: 100%;
+	width: 65px;
+}
+
+
+/*轮播*/
+.carousel-control {
+	font-size: 0.5rem;
+	vertical-align: middle;
+}
+.carousel-control:before {
+	display: inline-block;
+	content: '';
+	height: 100%;
+	vertical-align: middle;
+}
+
+/*主内容*/
+.container {
+	margin-top: 1rem;
+}
+
+/*summary*/
+.summary>div {
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+.summary>div:last-child {
+	padding-top: 62px;
+
+}
+.summary>div h4 {
+	font-weight: 700;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.summary>div p {
+	font-size: 0.15rem;
+	color: #999999;
+}
+.bg-rocket {
+	display: inline-block;
+    width: 43px; height: 62px;
+    background: url('../image/index-assets/css_sprites.png') -184px -10px;
+}
+.bg-archive {
+	display: inline-block;
+	margin-top: 14px;
+    width: 60px; height: 48px;
+    background: url('../image/index-assets/css_sprites.png') -104px -10px;
+}
+.bg-Shape253 {
+	display: inline-block;
+	margin-top: 7px;
+    width: 52px; height: 55px;
+    background: url('../image/index-assets/css_sprites.png') -10px -104px;
+}
+
+/*如何学习*/
+.learn {
+	margin-top: 1.5rem;
+}
+
+.row h4 {
+	text-align: center;
+	font-weight: 700;
+}
+
+.learn div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+.learn p {
+	margin-left: 0.1rem;
+	width: 50%;
+	line-height: 0.22rem;
+	color: #999;
+}
+.bg-arrow {
+	display: inline-block;
+    width: 32px; height: 30px;
+    background: url('../image/index-assets/css_sprites.png') -184px -92px;
+}
+
+.bg-circle {
+	display: inline-block;
+    width: 50px; height: 50px;
+   text-align: center;
+   vertical-align: middle;
+   background: #fff;
+   border-radius: 50%;
+   border: 2px solid #fff;
+   box-shadow:  0px 2px 0px 0px #999;    /*下阴影*/
+}
+.bg-circle:before {
+	content: '';
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+/*优秀学员*/
+.talents {
+	margin-top: 2rem;
+}
+
+.people-msg {
+	text-align: center;
+	border: 2px solid #999;
+	margin-top: 0.5rem;
+}
+.people-msg p {
+	border: 2px solid red;
+	text-align: left;
+	color: #999;
+	line-height: 0.22rem;
+
+}
+
+.people-msg h4 {
+	margin-bottom: 0.2rem;
+	margin-top: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+	/*头部*/
+	header {
+		padding-right: 1.4rem;
+		padding-left: 1.4rem;
+	}
+	.icon-group, .phone {
+		display: inline-block;
+	}
+
+	/*导航栏*/
+	.navbar {
+		position: relative;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+		background: #29b078;
+		font-size: 0.17rem;	
+		color: #fff;	
+		height: 0.9rem;
+	}
+	.nav a{
+		margin-left: 0.2rem;
+		color: #fff;
+		vertical-align: middle;
+		height: 0.9rem;
+	}
+	.nav a:before {
+		display: inline-block;
+		content: '';
+		height: 100%;
+		vertical-align: middle;
+	}
+	.nav a:hover {
+		color: #fff;
+		border-bottom: 4px solid #fff;
+	}
+	.navbar-brand {
+		display: inline-block;
+		margin-top: 0.2rem;
+		margin-bottom: 0.2rem;
+		padding: 0;
+	}
+	.brand-img {
+		max-width: 100%;
+		width: 107px;
+		height: 49px;
+	}
+
+	.navbar-toggle {
+		
+	}
+	#navbar1 {
+
+	}
+
+
+	
+}
