@@ -102,93 +102,157 @@ header {
 	max-width: 100%;
 	width: 65px;
 }
-/*背景*/
-
-#myCarousel img {
-	max-width: 100%;
-	width: 100%;
-}
 
 /*main content*/
 .container {
-	margin-top: 0.1rem;
+	margin-top: 0.2rem;
 }
-.container h5 {
-	margin-bottom: 0.3rem;
+.container h5,
+.container h4 {
+	margin-bottom: 0.2rem;
+	border-bottom: 2px solid #d0d6d9;
+	padding-bottom: 0.25rem;
 	font-size: 0.16rem;
 }
-.row>div {
-	padding: 0;
+.container h4 {
+	margin-bottom: 0.45rem;
+	font-weight: 700;
 }
+
+/*option*/
 .navegation {
 	margin-bottom: 0.2rem;
-	padding-bottom: 0.5rem;
-	border: 2px solid #e6e6e6;
-	border-radius: 0.05rem;
-	text-align: center;
-}
-.navegation p {
-	margin-top: 0.3rem;
-	padding-bottom: 0.2rem;
-	margin-bottom: 0.2rem;
-	border-bottom: 1px solid #cccccc;
-	font-weight: 700;
+	font-size: 0.14rem;	
+	border-bottom: 1px solid #edf1f2;
 }
 .navegation ul {
 	display: inline-block;
-	text-align: left;
-	font-size: 0.15rem;
-	letter-spacing: 0.02rem;
 }
 .navegation li {
-	margin-bottom: 0.3rem;
-
-}
-.navegation li::before {
-	content:" "; 
 	display: inline-block;
-	width: 0.1rem;
-	height: 0.1rem;
-	border: 1px solid #ff650e;
-	border-radius: 50%;
-	margin-right: 0.15rem;
+	margin-left: 0.01rem;
+	margin-right: 0.01rem;
+	padding: 0.05rem 0.05rem;
+}
+.navegation li:hover {
+	border-radius: 0.03rem;
+	background: #29b078;
+}
+.navegation li:hover a {
+	color: #fff;
 }
 .navegation a {
-
-	color: #29b078;
+	color: #000;
 	text-decoration: none;
 }
 
-.navegation a:hover {
-	color: #ff650e;
-	text-decoration: none;
+/*position table*/
+.front>div,
+.rear>div,
+.mobile>div {
+	padding: 0 0.2rem;
+	margin-bottom: 0.4rem;
 }
+.position-msg {
+	position: relative;
+	border: 2px solid #eeeded;
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 0.12rem;
+	table-layout:fixed;/* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */  
 
-.navegation li.checked>a {
-	color: #ff650e;
 }
-.navegation li.checked::before {
-	background: #ff650e;
+.position-msg td {
+	padding: 0.05rem;
+	border: 2px solid #eeeded;
 }
-
-.wrap-company {
-	padding: 0.2rem;
-	border: 2px solid #e6e6e6;
-	border-radius: 0.05rem;
-	color: #999;
-	text-indent: 0.32rem;
-	line-height: 0.3rem;
+.summary span {
+	font-size: 0.14rem;
 }
-.wrap-company img {
+.summary h6 {
+	font-size: 0.16rem;
+	font-weight: 700;
+}
+.summary img {
+	float: left;
 	max-width: 100%;
-	vertical-align: bottom;
 	margin-right: 0.1rem;
 }
 
+.bg-star {
+	vertical-align: top;
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	background: url(../image/positionList-assets/star.png);
+	margin-left: 0.1rem;
+}
+.salary {
+	text-align: center;
+}
+.money {
+	text-align: right;
+}
+.tip {
+	width:100%;  
+	word-break:keep-all;/* 不换行 */  
+	white-space:nowrap;/* 不换行 */  
+	overflow:hidden;/* 内容超出宽度时隐藏超出部分的内容 */  
+	text-overflow:ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用*/  
+}
+/*.position-msg:hover+.cover {
+	visibility: visible;
+}
+*/
+/*.position-msg:hover::before {
+	content: "Web前端开发工程师，主要职责是 利用（X）HTML/CSS/JavaScript/ flash等各种Web技术进行产品的开发。";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	font-size: 0.16rem;
+	color: #fff;
+	text-indent: 0.32rem;
+	padding-top: 40%;
+}*/
+
+/*cover*/
+.cover {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0.2rem;
+	width: calc(100% - 0.4rem);
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 1000;
+	color: #fff;
+	line-height: 0.22rem;
+	
+}
+.cover-wrap {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 0.2rem;
+	display: inline-block;
+}
+.cover h3 {
+	text-align: center;
+	margin-bottom: 0.2rem;
+	font-size: 0.16rem;
+	font-weight: 700;
+}
+.cover p {
+	text-indent: 0.28rem;
+	font-size: 0.14rem;
+}
 
 /*footer*/
 footer {
-	margin-top: 0.3rem;
+	margin-top: 0.5rem;
 	padding-left: 0.1rem;
 	background: #26a26f;
 	color: #fff;
@@ -294,9 +358,10 @@ footer>P {
 	}
 
 /*container*/
-.navegation {
-	margin-right: 0.4rem;
-}
+
+
+
+
 
 /*footer*/
 	footer {
