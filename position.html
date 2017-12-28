@@ -9,23 +9,31 @@
 	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
 	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	
+	<link rel="stylesheet" type="text/css" href="css/general-css.css">
 	<link rel="stylesheet" type="text/css" href="css/position-style.css">
 	<title>文档标题</title>
 </head>
 <body>
-	<header>
-		<span class="phone">咨询电话：010-59478634</span>
-		<ol class="breadcrumb">
-		    <li><a href="#">登录</a></li>
-		    <li><a href="#">注册</a></li>
-		</ol>
-		<ul class="icon-group list-inline">
-			<li><a href="#" class="bg-qq"></a></li>
-			<li><a href="#" class="bg-weixin"></a></li>
-			<li><a href="#" class="bg-weibo"></a></li>
-		</ul>	
-	</header>
+	<a class="btn top-btn" href="#top">
+			<span class="glyphicon glyphicon-arrow-up"></span>
+		</a>
+		<a class="btn bottom-btn" href="#bottom">
+			<span class="glyphicon glyphicon-arrow-down"></span>
+		</a>
+		<header id="top">
+			<span class="phone">咨询电话：010-59478634</span>
+			<ol class="breadcrumb">
+			    <li><a href="#">登录</a></li>
+			    <li><a href="#">注册</a></li>
+			</ol>
+			<ul class="icon-group list-inline">
+				<li><a href="#" class="bg-qq"></a></li>
+				<li class="weixin"><a href="#" class="bg-weixin"></a><img src="image/index-assets/erweima.png"></li>
+				<li><a href="#" class="bg-weibo"></a></li>
+			</ul>
+
+		</header>
 	<!-- 导航栏 -->
 	<nav class="navbar navbar-default">
 		<div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
@@ -551,5 +559,6 @@
 	
 	
 </script>
+<script type="text/javascript" src="common.js"></script>
 </body>
 </html>
