@@ -539,7 +539,7 @@
 
 <script type="text/javascript">
 	$(document).ready(function() {
-		$(".position-msg").click(function(){
+		$(".position-msg").mouseenter(function(){
 			if($(this).next(".cover").css("visibility")!="hidden"){
 			    $(this).next(".cover").css("visibility","hidden");
 			}else{
@@ -547,7 +547,7 @@
 			};		  
 		});	
 
-		$(".cover").click(function(){
+		$(".cover").mouseleave(function(){
 			if($(this).css("visibility")!="hidden"){
 			    $(this).css("visibility","hidden");
 			}else{
